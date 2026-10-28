@@ -1,0 +1,105 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "core": {
+    "background": {
+      "value": "#000000",
+      "role": "background",
+      "name": "color-cambio-transparent-full"
+    },
+    "text-primary": {
+      "value": "#ffffff",
+      "role": "text-primary",
+      "name": "color-base-white"
+    },
+    "surface": {
+      "value": "#191919",
+      "role": "surface"
+    },
+    "text-muted": {
+      "value": "#5e5952",
+      "role": "text-muted",
+      "name": "color-base-gray-60"
+    },
+    "border": {
+      "value": "#363432",
+      "role": "border",
+      "name": "color-base-gray-800"
+    }
+  },
+  "status": {
+    "warning": {
+      "value": "#ffe733",
+      "role": "warning",
+      "name": "color-base-yellow-700"
+    },
+    "danger": {
+      "value": "#ff8071",
+      "role": "danger",
+      "name": "color-base-destructive-200"
+    },
+    "success": {
+      "value": "#84ce64",
+      "role": "success",
+      "name": "color-base-success-200"
+    }
+  },
+  "extended": {
+    "color-0000ee": {
+      "value": "#0000ee",
+      "role": "info"
+    },
+    "color-838383": {
+      "value": "#838383",
+      "role": "unknown"
+    },
+    "color-base-gray-200": {
+      "value": "#e4dbd3",
+      "role": "unknown",
+      "name": "color-base-gray-200"
+    },
+    "color-eff6fa": {
+      "value": "#eff6fa",
+      "role": "unknown"
+    },
+    "color-236482": {
+      "value": "#236482",
+      "role": "unknown"
+    },
+    "color-base-gray-10": {
+      "value": "#beb4ab",
+      "role": "unknown",
+      "name": "color-base-gray-10"
+    },
+    "color-base-gray-100": {
+      "value": "#faf4eb",
+      "role": "unknown",
+      "name": "color-base-gray-100"
+    },
+    "color-27455c": {
+      "value": "#27455c",
+      "role": "unknown"
+    },
+    "color-656565": {
+      "value": "#656565",
+      "role": "unknown"
+    },
+    "color-base-gray-900": {
+      "value": "#262625",
+      "role": "unknown",
+      "name": "color-base-gray-900"
+    },
+    "color-cbcbcb": {
+      "value": "#cbcbcb",
+      "role": "unknown"
+    },
+    "color-base-destructive-700": {
+      "value": "#c93f32",
+      "role": "unknown",
+      "name": "color-base-destructive-700"
+    }
+  },
+  "meta": {
+    "theme": "dark",
+    "extracted": "2026-10-14"
+  }
+}

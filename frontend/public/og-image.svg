@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E1F22" />
+      <stop offset="100%" stop-color="#121316" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FFB800" />
+      <stop offset="100%" stop-color="#FF8A00" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="1020" cy="140" r="240" fill="#FFB800" opacity="0.12" />
+  <circle cx="180" cy="520" r="200" fill="#FF8A00" opacity="0.1" />
+  <rect x="72" y="72" width="1056" height="486" rx="36" fill="#25272C" stroke="#FFB800" stroke-opacity="0.35" stroke-width="2" />
+  <rect x="128" y="132" width="180" height="44" rx="22" fill="#FFB800" />
+  <text x="218" y="161" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="18" font-weight="800" fill="#121316" text-anchor="middle">CICIK AI STUDIO</text>
+  <text x="128" y="268" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="62" font-weight="800" fill="#FFFFFF">Sen Konuş, Cicik Yazsın.</text>
+  <text x="128" y="340" font-family="Plus Jakarta Sans, Inter, sans-serif" font-size="38" font-weight="700" fill="url(#accent)">100K Nöral TTS · Ses Klonlama · Whisper STT</text>
+  <text x="128" y="418" font-family="Inter, sans-serif" font-size="24" font-weight="500" fill="#9CA3AF">Doğal Türkçe &amp; İngilizce seslendirme, XTTS v2 ses klonlama ve</text>
+  <text x="128" y="454" font-family="Inter, sans-serif" font-size="24" font-weight="500" fill="#9CA3AF">yapay zekâ destekli önemli yerleri çıkaran akıllı transkripsiyon stüdyosu.</text>
+</svg>

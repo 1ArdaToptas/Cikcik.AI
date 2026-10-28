@@ -1,0 +1,24 @@
+{
+  "name": "Cicik AI — Nöral Seslendirme ve Transkripsiyon Stüdyosu",
+  "short_name": "Cicik AI",
+  "description": "Doğal Türkçe & İngilizce metinden sese (TTS), XTTS v2 ses klonlama ve Whisper AI sesten metne (STT) stüdyosu.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#FAF4EB",
+  "theme_color": "#FFE733",
+  "icons": [
+    {
+      "src": "/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

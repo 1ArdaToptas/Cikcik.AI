@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+  font-family: 'Garnett';
+  src: url('/fonts/Garnett-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Garnett';
+  src: url('/fonts/Garnett-510.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Garnett';
+  src: url('/fonts/Garnett-590.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Super';
+  src: url('/fonts/GTSuper-510.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Super';
+  src: url('/fonts/GTSuper-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-display: "GT Super", Georgia, serif;
+  --font-sans: "Garnett", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  /* Cambly Design System Tokens */
+  --color-cambly-black: #000000;
+  --color-cambly-surface: #191919;
+  --color-cambly-border-dark: #363432;
+  --color-cambly-cream: #FAF4EB;
+  --color-cambly-card-light: #FFFFFF;
+  --color-cambly-border-light: #E4DBD3;
+  --color-cambly-yellow: #FFE733;
+  --color-cambly-danger: #FF8071;
+  --color-cambly-success: #84CE64;
+  --color-cambly-gray-60: #5E5952;
+  --color-cambly-gray-800: #363432;
+
+  /* Cicik Brand Identity Colors mapped to Cambly / Sakura palette */
+  --color-chick-yellow: var(--accent-primary);
+  --color-chick-cream: #FAF4EB;
+  --color-chick-surface: var(--sidebar-bg);
+  --color-chick-card: var(--card-bg);
+  --color-chick-navy: var(--text-main);
+  --color-chick-orange: var(--accent-secondary);
+  --color-chick-chirp: #38BDF8;
+  --color-chick-success: #84CE64;
+  --color-chick-red: #FF8071;
+  --color-chick-mute: var(--text-muted);
+  --color-chick-border: var(--border-subtle);
+
+  /* Legacy fallback aliases adapted for Cambly contrast */
+  --color-canvas: var(--bg-main);
+  --color-panel: var(--card-bg);
+  --color-sidebar: var(--sidebar-bg);
+  --color-ink: var(--text-main);
+  --color-mute: var(--text-muted);
+  --color-accent: var(--accent-primary);
+  --color-accent-ink: #191919;
+}
+
+/* Light Mode: Cambly Warm Cream & Crisp High-Contrast Charcoal */
+:root {
+  --bg-main: #FAF4EB;
+  --card-bg: #FFFFFF;
+  --sidebar-bg: #F4ECE0;
+  --surface-hover: #ECE2D2;
+  --text-main: #141413;
+  --text-muted: #4B463F;
+  --border-subtle: #DFD7CE;
+  --border-card: #DFD7CE;
+  --focus-ring: #D97706;
+  --accent-primary: #FFE733;
+  --accent-secondary: #FF9F43;
+  --shadow-card: 0 2px 10px rgba(20, 20, 19, 0.04), 0 1px 2px rgba(20, 20, 19, 0.03);
+  --shadow-elevated: 0 12px 28px rgba(20, 20, 19, 0.08), 0 2px 6px rgba(20, 20, 19, 0.04);
+  --scrollbar-track: #F4ECE0;
+  --scrollbar-thumb: #C8BFB5;
+  --scrollbar-thumb-hover: #8F8274;
+}
+
+/* Dark Mode: Cambly Pure Black, Dark Slate & High Contrast White */
+.dark {
+  --bg-main: #000000;
+  --card-bg: #141414;
+  --sidebar-bg: #1B1B1B;
+  --surface-hover: #242321;
+  --text-main: #FFFFFF;
+  --text-muted: #A39E93;
+  --border-subtle: #2C2A28;
+  --border-card: #242220;
+  --focus-ring: #FFE733;
+  --accent-primary: #FFE733;
+  --accent-secondary: #FF9F43;
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.45);
+  --shadow-elevated: 0 14px 34px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 231, 51, 0.14);
+  --scrollbar-track: #181818;
+  --scrollbar-thumb: #3E3B38;
+  --scrollbar-thumb-hover: #635F5A;
+}
+
+/* Sakura Mode: Cherry Blossom Blush, Rose Quartz & Deep Plum Ink */
+.sakura {
+  --bg-main: #FFF5F8;
+  --card-bg: #FFFFFF;
+  --sidebar-bg: #FCE7F0;
+  --surface-hover: #F9D5E5;
+  --text-main: #2D1220;
+  --text-muted: #7A4961;
+  --border-subtle: #F3C6D8;
+  --border-card: #EFAFC9;
+  --focus-ring: #DB2777;
+  --accent-primary: #FF8EB8;
+  --accent-secondary: #DB2777;
+  --shadow-card: 0 4px 16px rgba(219, 39, 119, 0.07), 0 1px 3px rgba(219, 39, 119, 0.04);
+  --shadow-elevated: 0 14px 32px rgba(219, 39, 119, 0.14), 0 2px 8px rgba(219, 39, 119, 0.06);
+  --scrollbar-track: #FCE7F0;
+  --scrollbar-thumb: #F3A8C5;
+  --scrollbar-thumb-hover: #DB2777;
+}
+
+html.sakura body {
+  background-image:
+    radial-gradient(circle at 12% 14%, rgba(255, 142, 184, 0.18) 0%, transparent 36%),
+    radial-gradient(circle at 88% 82%, rgba(219, 39, 119, 0.1) 0%, transparent 40%);
+}
+
+html {
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Visible Keyboard Focus States (WCAG 2.2 AA/AAA) */
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* Universal Cross-Browser Visible Scrollbar Styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+/* WebKit / Chromium / Edge / Safari custom scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 9999px;
+  border: 2px solid var(--scrollbar-track);
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: var(--scrollbar-track);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Ensure inputs, selects, and textareas have crisp border and high contrast in both themes */
+textarea,
+input:not([type="range"]),
+select {
+  background-color: var(--card-bg) !important;
+  color: var(--text-main) !important;
+  border-color: var(--border-subtle) !important;
+}
+
+select option {
+  background-color: var(--card-bg);
+  color: var(--text-main);
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: var(--text-muted) !important;
+  opacity: 0.85 !important;
+}
+
+/* --- Cicik Micro Interactions & Keyframes --- */
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes chirp-breathe {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-3px) scale(1.02);
+  }
+}
+
+@keyframes chirp {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  30% {
+    transform: translateY(-2px) rotate(-2deg);
+  }
+  60% {
+    transform: translateY(-1px) rotate(2deg);
+  }
+}
+
+@keyframes chirp-listen {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-3deg) translateY(-2px);
+  }
+  75% {
+    transform: rotate(3deg) translateY(-1px);
+  }
+}
+
+@keyframes sound-wave {
+  0%,
+  100% {
+    height: 18%;
+    opacity: 0.55;
+  }
+  50% {
+    height: 95%;
+    opacity: 1;
+  }
+}
+
+@keyframes wave-bar {
+  0%,
+  100% {
+    height: 25%;
+    opacity: 0.65;
+  }
+  50% {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+.animate-enter {
+  animation: enter 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.stagger-1 {
+  animation-delay: 40ms;
+}
+.stagger-2 {
+  animation-delay: 80ms;
+}
+.stagger-3 {
+  animation-delay: 120ms;
+}
+.stagger-4 {
+  animation-delay: 160ms;
+}
+
+.animate-chirp-breathe {
+  animation: chirp-breathe 2.8s ease-in-out infinite;
+}
+
+.animate-chirp {
+  animation: chirp 2.4s ease-in-out infinite;
+}
+
+.animate-chirp-listen {
+  animation: chirp-listen 1.4s ease-in-out infinite;
+}
+
+.animate-sound-wave {
+  animation: sound-wave 0.8s ease-in-out infinite;
+}
+
+.animate-wave-bar {
+  animation: wave-bar 0.7s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+
+/* Magic UI Core Animations */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap, 1rem)));
+  }
+}
+
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - var(--gap, 1rem)));
+  }
+}
+
+@keyframes border-beam {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes meteor {
+  0% {
+    transform: rotate(215deg) translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(215deg) translateX(-500px);
+    opacity: 0;
+  }
+}
+
+@keyframes shimmer-slide {
+  to {
+    transform: translate(calc(100cqw - 100%), 0);
+  }
+}
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-marquee {
+  animation: marquee var(--duration, 30s) linear infinite;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration, 30s) linear infinite;
+}
+
+.animate-border-beam {
+  animation: border-beam var(--duration, 8s) linear infinite;
+}
+
+.animate-meteor {
+  animation: meteor 5s linear infinite;
+}
+
+.animate-gradient-x {
+  animation: gradient-x 4s ease infinite;
+}
+
+/* Cambly Subtle Elevations & Micro-animations */
+@keyframes cambly-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 231, 51, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 231, 51, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 231, 51, 0);
+  }
+}
+
+.animate-cambly-pulse {
+  animation: cambly-pulse 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.cambly-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  box-shadow: var(--shadow-card);
+  transition:
+    border-color 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.2s ease;
+}
+
+.cambly-card-interactive {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  box-shadow: var(--shadow-card);
+  transition:
+    border-color 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.2s ease;
+}
+
+.cambly-card-interactive:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-elevated);
+  border-color: rgba(255, 231, 51, 0.65);
+}
+
+/* Custom Audio Scrubber */
+.player-range {
+  appearance: none;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(23, 32, 51, 0.14);
+  outline: none;
+  cursor: pointer;
+}
+
+.dark .player-range {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.player-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: var(--color-chick-yellow);
+  border: 2px solid #141413;
+  box-shadow: 0 2px 5px rgba(20, 20, 19, 0.25);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.dark .player-range::-webkit-slider-thumb {
+  border-color: #FFFFFF;
+}
+
+.player-range::-webkit-slider-thumb:hover {
+  transform: scale(1.18);
+  box-shadow: 0 0 0 4px rgba(255, 231, 51, 0.25);
+}
+
+.player-range:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Respect User Reduced-Motion Preference (WCAG 2.3.3 / UI UX Pro Max) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

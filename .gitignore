@@ -1,0 +1,33 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Root dependencies & cache
+node_modules/
+.vite/
+*.mp3
+*.wav
+.pytest_cache/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/*.local
+
+# Backend
+backend/.venv/
+backend/.venv.venv/
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/.env
+backend/.env.*
+!backend/.env.example
+backend/models/
+backend/custom_voices/
+
+# Logs & Playwright test artifacts
+*.log
+.playwright-mcp/
