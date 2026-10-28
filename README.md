@@ -1,6 +1,6 @@
-# 🐥 Cikcilk.AI — Nöral Seslendirme, Ses Klonlama ve Akıllı Transkripsiyon Stüdyosu
+# 🐥 Cikcik.AI — Neural Text-to-Speech, Voice Cloning & Transcription Studio
 
-> *"Sen konuş, Cikcilk yazsın."*
+> *"You speak, Cikcik writes. You write, Cikcik speaks."*
 
 [![React 19](https://img.shields.io/badge/React-19.0-61dafb?logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -8,84 +8,84 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Python 3.11](https://img.shields.io/badge/Python-3.11-3776ab?logo=python&logoColor=white)](https://www.python.org/)
 [![PWA Ready](https://img.shields.io/badge/PWA-Ready-ff69b4?logo=pwa&logoColor=white)](https://web.dev/progressive-web-apps/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**Cikcilk.AI**, 100.000 karaktere kadar kesintisiz ve doğal metinden sese (TTS) dönüştürme, tek örnekle özel yapay zekâ ses klonlama, YouTube ve dosyalardan Whisper yapay zekâsı ile anında deşifre (STT) yapabilen kurumsal kalitede bir ses stüdyosu platformudur.
-
----
-
-## 🌟 Öne Çıkan Özellikler
-
-### 1. 🎙️ 100.000 Karakter Nöral Metinden Sese (TTS)
-- **Akıllı Cümle Ayrıştırma:** 100K karaktere kadar olan uzun kitap bölümlerini ve makaleleri teklemeyen doğal nefes duraklarıyla parçalar ve kusursuz şekilde dikişsiz (seamless) birleştirir.
-- **Zengin Ses Kataloğu:**
-  - **Türkçe:** Ahmet (Akıcı & Doğal), Emel (Sıcak & Net), Çınar (Meta AI), Piper Türkçe (Yerel / İnternetsiz).
-  - **İngilizce:** Jenny & Guy (US Studio), Aria & Fenrir (Kokoro AI), Brian & Sonia (UK British Studio), Jessie & Joey (TikTok Viral).
-- **Canlı Yüzde (%) ve Tahmini Süre Sayacı:** Sentezleme işlemi sırasında anlık ilerleme çubuğu, fonem analiz aşamaları ve kalan süre geri sayımı.
-
-### 2. 🧬 Özel Ses Klonlama Stüdyosu (Voice Cloning)
-- Bilgisayarınızdan yükleyeceğiniz veya mikrofonla kaydedeceğiniz **3-10 saniyelik referans ses** ile kişisel ses karakterinizi klonlayın.
-- Pitch/F0 frekans analizi ve ses tınısı eşleştirmesi ile klonlanan sesleri metin seslendirmede hemen kullanın.
-
-### 3. ✍️ Whisper STT (Sesten Metne Çevirici)
-- **YouTube & Video URL Çevirisi:** `yt-dlp` entegrasyonu sayesinde herhangi bir YouTube veya web video bağlantısını yapıştırarak sesi metne dökün.
-- **Ses Dosyası Yükleme:** MP3, WAV, M4A, OGG ve FLAC dosyalarından tam transkripsiyon.
-- **Canlı Mikrofon Stüdyosu:** Konuşurken dinamik ses dalga formu (waveform) animasyonları ile anında yazıya döküm.
-- **Altyazı ve Çeviri:** Zaman damgalı altyazı üretimi (SRT, VTT, TXT formatlarında dışa aktarma) ve çok dilli yapay zekâ çevirisi.
-
-### 4. 🎛️ Gelişmiş Ses Oynatıcı & Arşiv Yönetimi
-- **Hassas Ses Düzeyi Çubuğu (Volume Slider):** Tek tıkla sessize alma (Mute/Unmute) ve kalıcı ses seviyesi hafızası.
-- **Çoklu Hız Ayarı:** 0.5× ile 2.0× arası pürüzsüz hız kaydırıcı ve hızlı hız butonları.
-- **Tek Tek Silme & Onay Modalları:** İstemediğiniz üretimleri onay penceresiyle tek tek veya geçmişi topluca temizleme imkânı.
-- **IndexedDB Depolama:** Üretilen tüm sesler ve transkriptler tarayıcıda yerel olarak önbelleğe alınır, sayfa yenilense de kaybolmaz.
-
-### 5. 🎨 3 Farklı Tasarım Teması & WCAG AA Uyumu
-- **Gündüz Modu (Light):** Sıcak Cambly krem (`#FAF4EB`) ve yüksek kontrastlı odun kömürü metinler.
-- **Gece Modu (Dark):** Saf siyah (`#000000`), neon sarı (`#FFE733`) vurgular ve stüdyo panelleri.
-- **Sakura Modu:** Kiraz çiçeği pudra pembesi (`#FFF5F8`) ve derin mürdüm mürekkep kontrastı.
-
-### 6. 📱 PWA (Progressive Web App) Desteği
-- Masaüstü (Chrome, Edge, Safari) ve mobil cihazlarda tek tıkla **"Uygulamayı Yükle"** desteği.
-- Service Worker (`sw.js`) ile statik kaynak önbellekleme ve çevrimdışı yedekleme.
+**Cikcik.AI** is an all-in-one, privacy-focused neural audio workstation capable of seamless long-form text-to-speech synthesis up to **100,000 characters**, instant **voice cloning** with a single audio sample, and lightning-fast **speech-to-text (STT)** from YouTube URLs or local audio files powered by OpenAI Whisper.
 
 ---
 
-## 🛠️ Mimari ve Teknoloji Yığını
+## 🌟 Key Features
 
-| Katman | Teknolojiler |
+### 1. 🎙️ 100,000 Character Neural Text-to-Speech (TTS)
+- **Intelligent Sentence Boundary Chunking:** Splits extensive book chapters, reports, or articles into natural linguistic pauses, synthesizes audio chunks concurrently, and stitches them seamlessly into single audio files without glitches.
+- **Diverse Neural Voices:**
+  - **Turkish:** Ahmet (Fluid & Natural), Emel (Warm & Articulate), Çınar (Meta AI), Piper Turkish (Local / Offline ONNX).
+  - **English:** Jenny & Guy (US Studio Quality), Aria & Fenrir (Kokoro AI), Brian & Sonia (UK British Studio), Jessie & Joey (Viral TikTok tone).
+- **Live % Progress & ETA Countdown:** Real-time synthesis progress bar, phoneme processing indicators, and remaining time countdown.
+
+### 2. 🧬 Custom Voice Cloning Studio
+- Clone any voice using just a **3 to 10-second reference audio clip** or direct microphone recording.
+- Pitch/F0 contour extraction and timbre modeling allow immediate synthesis of custom text using the cloned identity.
+
+### 3. ✍️ Whisper Speech-to-Text (STT) & Video Transcription
+- **YouTube & Web Video Extraction:** Paste any YouTube or video URL to fetch and transcribe audio directly via `yt-dlp`.
+- **Local File Uploads:** Supports drag-and-drop for MP3, WAV, M4A, OGG, and FLAC audio files.
+- **Live Microphone Studio:** Live audio waveform visualization with instant transcription.
+- **Export & Translation:** Timestamped subtitles (exportable as SRT, VTT, TXT) and multilingual AI translation.
+
+### 4. 🎛️ Studio Audio Player & Archive Management
+- **Precision Volume Controls:** Smooth volume slider, one-click mute/unmute toggle, and persistent volume state.
+- **Speed Control:** Variable playback rate from 0.5× to 2.0× with quick-preset chips.
+- **Individual Item Deletion:** Remove single audio or transcription records with confirmation modals, or purge history in bulk.
+- **IndexedDB Local Storage:** High-capacity client-side caching ensures generated audio blobs and history persist across browser refreshes and offline sessions.
+
+### 5. 🎨 3 Premium Themes & WCAG AA Accessibility
+- **Light Mode:** Warm Cambly cream background (`#FAF4EB`) with high-contrast charcoal text.
+- **Dark Mode:** Deep studio black (`#000000`) with electric yellow accents (`#FFE733`).
+- **Sakura Mode:** Soft cherry blossom pink (`#FFF5F8`) with rich plum ink contrast.
+
+### 6. 📱 Progressive Web App (PWA)
+- Full PWA installation support on desktop (Chrome, Edge, Safari) and mobile devices.
+- Custom service worker (`sw.js`) provides static asset caching and offline resilience.
+
+---
+
+## 🛠️ Architecture & Tech Stack
+
+| Layer | Technologies |
 | :--- | :--- |
 | **Frontend** | React 19, TypeScript 5.9, Vite 8, Tailwind CSS v4 |
-| **Bileşenler** | Radix UI Primitives, Lucide Icons, Magic UI, React Bits |
+| **UI Components** | Radix UI Primitives, Lucide Icons, Magic UI, React Bits |
 | **Backend** | Python 3.11+, FastAPI, Uvicorn, Pydantic v2 |
-| **TTS Motorları** | Microsoft Edge Neural TTS, Piper TTS (Yerel ONNX), Voice Cloning (Librosa / SoundFile) |
-| **STT Motorları** | OpenAI Whisper / Faster-Whisper, `yt-dlp`, PyDub |
-| **Güvenlik** | CSP (Content Security Policy) başlıkları, CORS whitelist, In-memory Rate Limiting |
-| **Veri Depolama**| IndexedDB (Audio Blob cache), LocalStorage (Metadata), JSON Catalog |
+| **TTS Engines** | Microsoft Edge Neural TTS, Piper TTS (Local ONNX), Custom Voice Cloning (Librosa / SoundFile) |
+| **STT Engines** | OpenAI Whisper / Faster-Whisper, `yt-dlp`, PyDub |
+| **Security** | Strict CSP headers, CORS origin whitelisting, In-memory Rate Limiting |
+| **Persistence** | IndexedDB (Audio Blob Cache), LocalStorage (Metadata & Settings), JSON Voice Catalog |
 
 ---
 
-## 📂 Proje Dizin Yapısı
+## 📂 Project Structure
 
 ```
 tts-app/
 ├── backend/
 │   ├── app/
-│   │   ├── api/routes/          # FastAPI TTS, STT, Voices, Health rotaları
-│   │   ├── core/                # Ayarlar, güvenlik (CSP), rate limit, logging
-│   │   ├── data/                # Ses kataloğu ve desteklenen diller
-│   │   ├── schemas/             # Pydantic v2 modelleri
-│   │   ├── services/            # Edge, Piper, Whisper, Voice Cloning servisleri
-│   │   └── main.py              # Uygulama giriş noktası ve middleware'ler
-│   ├── tests/                   # Pytest birim ve güvenlik testleri (25/25 passed)
-│   └── pyproject.toml           # Python bağımlılıkları ve konfigürasyon
+│   │   ├── api/routes/          # FastAPI endpoints (TTS, STT, Voices, Health)
+│   │   ├── core/                # Settings, CSP headers, rate limiting, logging
+│   │   ├── data/                # Voice registry & language definitions
+│   │   ├── schemas/             # Pydantic v2 request/response models
+│   │   ├── services/            # Edge TTS, Piper, Whisper, Voice Cloning services
+│   │   └── main.py              # Application entry point & middleware
+│   ├── tests/                   # Pytest suite (25/25 passing)
+│   └── pyproject.toml           # Python dependencies and build config
 ├── frontend/
-│   ├── public/                  # Favicon, logo, manifest, sw.js (PWA)
+│   ├── public/                  # Favicon, app icons, web manifest, sw.js (PWA)
 │   ├── src/
-│   │   ├── components/          # AudioPlayer, Modal, Mascott, Radix Primitives
+│   │   ├── components/          # AudioPlayer, Modals, Mascot, Radix Primitives
 │   │   ├── context/             # StudioContext, LanguageContext
-│   │   ├── pages/               # HomePage, TextToSpeech, SpeechToText, CicikStudio, History
-│   │   ├── lib/                 # IndexedDB audioStorage, ttsApi, format araçları
-│   │   └── index.css            # Tailwind 4 tema değişkenleri ve animasyonlar
+│   │   ├── pages/               # HomePage, TextToSpeech, SpeechToText, VoiceStudio, History
+│   │   ├── lib/                 # IndexedDB audioStorage, ttsApi client, formatters
+│   │   └── index.css            # Tailwind 4 theme tokens and animations
 │   ├── package.json
 │   └── vite.config.ts
 └── README.md
@@ -93,95 +93,100 @@ tts-app/
 
 ---
 
-## 🚀 Hızlı Başlangıç & Kurulum
+## 🚀 Quick Start & Installation
 
-### Ön Gereksinimler
-- **Python:** 3.11 (Windows x64)
-- **Node.js:** 20+ ve `npm`
-- **FFmpeg:** Sistem ortam değişkenlerine (PATH) eklenmiş olmalıdır.
+### Prerequisites
+- **Python:** 3.11 (Windows x64 / Linux / macOS)
+- **Node.js:** 20+ and `npm`
+- **FFmpeg:** Must be installed and accessible in your system's `PATH`.
 
 ---
 
-### 1. Backend Kurulumu
+### 1. Backend Setup
 
-```powershell
-# Backend klasörüne geçin
+```bash
+# Navigate to the backend directory
 cd backend
 
-# Sanal ortamı oluşturun ve etkinleştirin
+# Create and activate a Python virtual environment
 python -m venv .venv
-.venv\Scripts\activate
 
-# Bağımlılıkları yükleyin
+# On Windows:
+.venv\Scripts\activate
+# On Linux/macOS:
+# source .venv/bin/activate
+
+# Install dependencies
 pip install -r requirements.txt
 
-# Örnek ortam değişkenlerini kopyalayın
-copy .env.example .env
+# Copy example environment configuration
+copy .env.example .env    # Windows
+# cp .env.example .env    # Linux/macOS
 
-# Sunucuyu başlatın
+# Start the FastAPI development server
 python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
 ```
 
-- **API Adresi:** <http://127.0.0.1:8000>
-- **Swagger Dokümantasyonu:** <http://127.0.0.1:8000/docs>
-- **Sağlık Kontrolü:** <http://127.0.0.1:8000/api/health>
+- **API Base URL:** `http://127.0.0.1:8000`
+- **Swagger Documentation:** `http://127.0.0.1:8000/docs`
+- **Health Check:** `http://127.0.0.1:8000/api/health`
 
 ---
 
-### 2. Frontend Kurulumu
+### 2. Frontend Setup
 
-Yeni bir terminal açın:
+Open a new terminal window:
 
-```powershell
-# Frontend klasörüne geçin
+```bash
+# Navigate to the frontend directory
 cd frontend
 
-# Bağımlılıkları yükleyin
+# Install dependencies
 npm install
 
-# Geliştirme sunucusunu başlatın
+# Start the Vite development server
 npm run dev
 ```
 
-- **Web Arayüzü:** <http://localhost:5173>
+- **Application URL:** `http://localhost:5173`
 
 ---
 
-## 🧪 Testler ve Kod Kalitesi
+## 🧪 Testing & Code Quality
 
-Tüm kod tabanı sıkı tip güvenliği ve linter kurallarına tabidir.
+The entire repository enforces strict type-safety and linting standards.
 
-### Backend Testleri (Pytest)
-```powershell
+### Backend Tests (Pytest)
+```bash
 cd backend
 .venv\Scripts\activate
 pytest
 ```
-> **Sonuç:** 25 passed in ~68s (TTS akışı, güvenlik başlıkları, rate limiting ve klonlama testleri dahil).
+> **Status:** 25 passed in ~68s (TTS streaming, security headers, rate limiting, and cloning tests).
 
-### Frontend Tip & Lint Kontrolleri (Oxlint & Vite)
-```powershell
+### Frontend Linting & Build (Oxlint & Vite)
+```bash
 cd frontend
 
-# Oxlint Linter (0 hata / 0 uyarı)
+# Run Oxlint (0 errors / 0 warnings)
 npm run lint
 
-# TypeScript derlemesi & Vite üretim build'i
+# TypeScript compilation & production build
 npm run build
 ```
 
 ---
 
-## 🔒 Güvenlik
+## 🔒 Security & Privacy
 
-- **Content Security Policy (CSP):** `frame-ancestors 'none'`, `object-src 'none'`, `base-uri 'self'` ve güvenli script/medya kaynakları yapılandırılmıştır.
-- **CORS Koruması:** Sadece izin verilen yerel ve canlı domain'lere açık CORS yapılandırması.
-- **Hız Sınırlaması (Rate Limiting):** API kötüye kullanımına ve brute-force'a karşı in-memory IP bazlı koruma.
-- **Geçici Dosya Temizliği:** İndirilen YouTube ve ses parçaları işlendikten sonra `finally` bloklarında otomatik olarak silinir.
+- **Content Security Policy (CSP):** Configured with `frame-ancestors 'none'`, `object-src 'none'`, `base-uri 'self'`, and restrictive media source controls.
+- **CORS Protection:** Restricted strictly to trusted origins.
+- **Rate Limiting:** In-memory IP-based protection preventing API abuse.
+- **Auto-Cleanup:** Temporary audio downloads (such as YouTube streams) are immediately deleted after processing in `finally` execution blocks.
 
 ---
 
-## 📄 Lisans
+## 📄 License
 
-Bu proje [MIT Lisansı](LICENSE) kapsamında lisanslanmıştır.
-Tüm hakları saklıdır © 2026 **Cikcilk.AI**.
+This project is licensed under the [MIT License](LICENSE).  
+Copyright © 2026 **Cikcik.AI**. All rights reserved.
