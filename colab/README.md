@@ -1,29 +1,29 @@
-# 🎙️ TTS & STT Studio — Google Colab GPU Kurulum Rehberi
+# 🎙️ Cikcik.AI — Google Colab GPU Setup Guide
 
-Bu rehber, **Coqui XTTS v2** ses klonlama motorunu Google'ın ücretsiz **NVIDIA Tesla T4 GPU (16 GB)** altyapısında çalıştırarak ses sentezleme süresini **3.5 dakikadan 2-3 saniyeye** düşürmenizi sağlar.
+This guide enables running the **Coqui XTTS v2** voice cloning engine on Google's free **NVIDIA Tesla T4 GPU (16 GB)** infrastructure, slashing synthesis latency from **~3.5 minutes down to 2–3 seconds**.
 
 ---
 
-### 🚀 3 Adımda Başlatma
+### 🚀 3-Step Quick Start
 
-#### 1. Not Defterini Colab'da Açın:
-1. Tarayıcınızda [Google Colab](https://colab.research.google.com)'ı açın.
-2. Açılan pencerede **"Yükle" (Upload)** sekmesine tıklayın.
-3. Bilgisayarınızdaki bu dosyayı seçin:
-   `c:\Users\ardat\cursor project\tts-app\colab\TTS_Studio_GPU_Colab.ipynb`
+#### 1. Open the Notebook in Google Colab:
+1. Open [Google Colab](https://colab.research.google.com) in your web browser.
+2. Select the **"Upload"** tab in the initial modal.
+3. Select the notebook file from your repository:
+   `colab/TTS_Studio_GPU_Colab.ipynb`
 
-#### 2. T4 GPU'yu Seçin:
-1. Colab üst menüsünden **Düzenle (Edit) -> Not Defteri Ayarları (Notebook Settings)** bölümüne gidin.
-2. **Donanım Hızlandırıcı (Hardware Accelerator)** olarak **T4 GPU** seçildiğinden emin olun ve Kaydet'e basın.
+#### 2. Select T4 GPU Hardware:
+1. In the Colab top navigation menu, open **Edit -> Notebook Settings**.
+2. Select **T4 GPU** under **Hardware accelerator** and click **Save**.
 
-#### 3. Tüm Hücreleri Çalıştırın:
-1. Üst menüden **Çalışma Zamanı (Runtime) -> Tümünü Çalıştır (Run all)** seçeneğine tıklayın (veya `Ctrl + F9`).
-2. Yaklaşık 1 dakika içinde model GPU belleğine yüklenecek ve hücrenin altında size özel bir bağlantı oluşacaktır:
+#### 3. Run All Cells:
+1. From the top menu, click **Runtime -> Run all** (or press `Ctrl + F9`).
+2. Within ~1 minute, the model will be loaded into GPU memory, and a public live tunnel link will be displayed under the last cell:
    ```text
    Running on public URL: https://xxxx.gradio.live
    ```
-3. Bu bağlantıya tıkladığınızda stüdyo ekranı açılır:
-   * Referans sesinizi yükleyin,
-   * Metninizi girin,
-   * **Sentezle** butonuna basın.
-   * **Süre: 2 - 3 saniye içinde sesiniz hazır!**
+3. Open this link to access the studio:
+   - Upload your 3–10s reference audio sample,
+   - Enter your target text,
+   - Click **Synthesize**.
+   - **Your cloned neural audio will be ready in 2–3 seconds!**
