@@ -1,52 +1,107 @@
-# 🐥 Cikcik.AI — Neural Text-to-Speech, Voice Cloning & Transcription Studio
+<div align="center">
 
-> *"You speak, Cikcik writes. You write, Cikcik speaks."*
+<img src="assets/logo.jpg" alt="Cikcik.AI logo" width="200" />
 
-[![React 19](https://img.shields.io/badge/React-19.0-61dafb?logo=react&logoColor=black)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS 4](https://img.shields.io/badge/Tailwind-v4.0-38bdf8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Python 3.11](https://img.shields.io/badge/Python-3.11-3776ab?logo=python&logoColor=white)](https://www.python.org/)
-[![PWA Ready](https://img.shields.io/badge/PWA-Ready-ff69b4?logo=pwa&logoColor=white)](https://web.dev/progressive-web-apps/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+# Cikcik.AI
+
+### *You speak, Cikcik writes. You write, Cikcik speaks.*
+
+<p>
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19.0-61dafb?logo=react&logoColor=black" alt="React 19" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.9-3178c6?logo=typescript&logoColor=white" alt="TypeScript" /></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind-v4.0-38bdf8?logo=tailwindcss&logoColor=white" alt="Tailwind CSS 4" /></a>
+  <a href="https://fastapi.tiangolo.com/"><img src="https://img.shields.io/badge/FastAPI-0.115+-009688?logo=fastapi&logoColor=white" alt="FastAPI" /></a>
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.11-3776ab?logo=python&logoColor=white" alt="Python 3.11" /></a>
+  <a href="https://web.dev/progressive-web-apps/"><img src="https://img.shields.io/badge/PWA-Ready-ff69b4?logo=pwa&logoColor=white" alt="PWA Ready" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License" /></a>
+</p>
+
+<p>
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=18&pause=1100&color=E0B400&center=true&vCenter=true&width=620&lines=Turn+long+text+into+natural+speech;Clone+a+voice+from+a+short+sample;Transcribe+audio+and+video+with+Whisper" alt="Animated Cikcik.AI feature tagline" />
+</p>
 
 **Cikcik.AI** is an all-in-one, privacy-focused neural audio workstation capable of seamless long-form text-to-speech synthesis up to **100,000 characters**, instant **voice cloning** with a single audio sample, and lightning-fast **speech-to-text (STT)** from YouTube URLs or local audio files powered by OpenAI Whisper.
 
+</div>
+
 ---
+
+## ✨ At a glance
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <h3>🎙️ 100K</h3>
+      <sub>Characters per TTS job</sub>
+    </td>
+    <td align="center" width="33%">
+      <h3>🧬 3–10 sec</h3>
+      <sub>Voice reference sample</sub>
+    </td>
+    <td align="center" width="33%">
+      <h3>🌍 Multilingual</h3>
+      <sub>Speech recognition & translation</sub>
+    </td>
+  </tr>
+</table>
 
 ## 🌟 Key Features
 
-### 1. 🎙️ 100,000 Character Neural Text-to-Speech (TTS)
+<details open>
+<summary><strong>1. 🎙️ 100,000 Character Neural Text-to-Speech (TTS)</strong></summary>
+
 - **Intelligent Sentence Boundary Chunking:** Splits extensive book chapters, reports, or articles into natural linguistic pauses, synthesizes audio chunks concurrently, and stitches them seamlessly into single audio files without glitches.
 - **Diverse Neural Voices:**
   - **Turkish:** Ahmet (Fluid & Natural), Emel (Warm & Articulate), Çınar (Meta AI), Piper Turkish (Local / Offline ONNX).
   - **English:** Jenny & Guy (US Studio Quality), Aria & Fenrir (Kokoro AI), Brian & Sonia (UK British Studio), Jessie & Joey (Viral TikTok tone).
 - **Live % Progress & ETA Countdown:** Real-time synthesis progress bar, phoneme processing indicators, and remaining time countdown.
 
-### 2. 🧬 Custom Voice Cloning Studio
+</details>
+
+<details open>
+<summary><strong>2. 🧬 Custom Voice Cloning Studio</strong></summary>
+
 - Clone any voice using just a **3 to 10-second reference audio clip** or direct microphone recording.
 - Pitch/F0 contour extraction and timbre modeling allow immediate synthesis of custom text using the cloned identity.
 
-### 3. ✍️ Whisper Speech-to-Text (STT) & Video Transcription
+</details>
+
+<details open>
+<summary><strong>3. ✍️ Whisper Speech-to-Text (STT) & Video Transcription</strong></summary>
+
 - **YouTube & Web Video Extraction:** Paste any YouTube or video URL to fetch and transcribe audio directly via `yt-dlp`.
 - **Local File Uploads:** Supports drag-and-drop for MP3, WAV, M4A, OGG, and FLAC audio files.
 - **Live Microphone Studio:** Live audio waveform visualization with instant transcription.
 - **Export & Translation:** Timestamped subtitles (exportable as SRT, VTT, TXT) and multilingual AI translation.
 
-### 4. 🎛️ Studio Audio Player & Archive Management
+</details>
+
+<details open>
+<summary><strong>4. 🎛️ Studio Audio Player & Archive Management</strong></summary>
+
 - **Precision Volume Controls:** Smooth volume slider, one-click mute/unmute toggle, and persistent volume state.
 - **Speed Control:** Variable playback rate from 0.5× to 2.0× with quick-preset chips.
 - **Individual Item Deletion:** Remove single audio or transcription records with confirmation modals, or purge history in bulk.
 - **IndexedDB Local Storage:** High-capacity client-side caching ensures generated audio blobs and history persist across browser refreshes and offline sessions.
 
-### 5. 🎨 3 Premium Themes & WCAG AA Accessibility
+</details>
+
+<details open>
+<summary><strong>5. 🎨 3 Premium Themes & WCAG AA Accessibility</strong></summary>
+
 - **Light Mode:** Warm Cambly cream background (`#FAF4EB`) with high-contrast charcoal text.
 - **Dark Mode:** Deep studio black (`#000000`) with electric yellow accents (`#FFE733`).
 - **Sakura Mode:** Soft cherry blossom pink (`#FFF5F8`) with rich plum ink contrast.
 
-### 6. 📱 Progressive Web App (PWA)
+</details>
+
+<details open>
+<summary><strong>6. 📱 Progressive Web App (PWA)</strong></summary>
+
 - Full PWA installation support on desktop (Chrome, Edge, Safari) and mobile devices.
 - Custom service worker (`sw.js`) provides static asset caching and offline resilience.
+
+</details>
 
 ---
 
@@ -66,7 +121,7 @@
 
 ## 📂 Project Structure
 
-```
+```text
 tts-app/
 ├── backend/
 │   ├── app/
@@ -96,11 +151,10 @@ tts-app/
 ## 🚀 Quick Start & Installation
 
 ### Prerequisites
+
 - **Python:** 3.11 (Windows x64 / Linux / macOS)
 - **Node.js:** 20+ and `npm`
 - **FFmpeg:** Must be installed and accessible in your system's `PATH`.
-
----
 
 ### 1. Backend Setup
 
@@ -131,8 +185,6 @@ python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
 - **Swagger Documentation:** `http://127.0.0.1:8000/docs`
 - **Health Check:** `http://127.0.0.1:8000/api/health`
 
----
-
 ### 2. Frontend Setup
 
 Open a new terminal window:
@@ -157,14 +209,17 @@ npm run dev
 The entire repository enforces strict type-safety and linting standards.
 
 ### Backend Tests (Pytest)
+
 ```bash
 cd backend
 .venv\Scripts\activate
 pytest
 ```
+
 > **Status:** 25 passed in ~68s (TTS streaming, security headers, rate limiting, and cloning tests).
 
 ### Frontend Linting & Build (Oxlint & Vite)
+
 ```bash
 cd frontend
 
@@ -190,3 +245,9 @@ npm run build
 
 This project is licensed under the [MIT License](LICENSE).  
 Copyright © 2026 **Cikcik.AI**. All rights reserved.
+
+<div align="center">
+
+**Made with 💛 and a little bird-brained brilliance.**
+
+</div>
